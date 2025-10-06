@@ -19,7 +19,7 @@ class MusicBot(commands.Bot):
         )
 
     async def setup_hook(self):
-        await self.load_extension('cogs.music')
+        await self.load_extension('src.cogs.music')
         await self.tree.sync()
         print(f"Synced slash commands for {self.user}")
 
